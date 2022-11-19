@@ -12,11 +12,12 @@ namespace Semana_16.Controllers
         {
             return View();
         }
-        public IActionResult Ayuda(string name, int numTimes = 1)
+        public IActionResult Ayuda(string name, string question, int numTimes = 1)
         {
 
-            ViewData["name"] = "Hola " + name;
+            ViewData["name"] = "Hola " + name + " " + question;
             ViewData["numTimes"] = numTimes;
+            ViewData["question"] = question;
             return View();
         }
     }
