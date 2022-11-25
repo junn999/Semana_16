@@ -16,6 +16,6 @@ namespace Semana_16.Data
         }
 
         public DbSet<Movie> Movie { get; set; }
-
+        public DbSet<Teather> Teather { get; set; }
     }
 }
